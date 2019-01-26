@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="addon-template-portlets:war">
+    <output-path>$PROJECT_DIR$/portlets/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>addon-template-portlets</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="addon-template-portlets.war">
+      <element id="artifact" artifact-name="addon-template-portlets:war exploded" />
+    </root>
+  </artifact>
+</component>

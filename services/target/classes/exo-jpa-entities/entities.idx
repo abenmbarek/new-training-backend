@@ -1,0 +1,8 @@
+org.exoplatform.stock.entity.ClientOrderLine
+org.exoplatform.stock.entity.ClientOrder
+org.exoplatform.stock.entity.Category
+org.exoplatform.stock.entity.Client
+org.exoplatform.stock.entity.SupplierOrder
+org.exoplatform.stock.entity.Article
+org.exoplatform.stock.entity.Supplier
+org.exoplatform.stock.entity.SupplierOrderLine

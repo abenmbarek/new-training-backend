@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.exoplatform.samples:addon-template-portlets:war:1.0">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/exoplatform/samples/addon-template-portlets/1.0/addon-template-portlets-1.0.war!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/exoplatform/samples/addon-template-portlets/1.0/addon-template-portlets-1.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/exoplatform/samples/addon-template-portlets/1.0/addon-template-portlets-1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/addon-template.iml" filepath="$PROJECT_DIR$/addon-template.iml" />
+      <module fileurl="file://$PROJECT_DIR$/packaging/addon-template-packaging.iml" filepath="$PROJECT_DIR$/packaging/addon-template-packaging.iml" />
+      <module fileurl="file://$PROJECT_DIR$/services/addon-template-services.iml" filepath="$PROJECT_DIR$/services/addon-template-services.iml" />
+      <module fileurl="file://$PROJECT_DIR$/war/addon-template-war.iml" filepath="$PROJECT_DIR$/war/addon-template-war.iml" />
+    </modules>
+  </component>
+</project>

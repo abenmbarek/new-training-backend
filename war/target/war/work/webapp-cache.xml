@@ -1,0 +1,16 @@
+<webapp-structure>
+  <registeredFiles>
+    <entry>
+      <string>currentBuild</string>
+      <path-set>
+        <pathsSet class="linked-hash-set">
+          <string>WEB-INF/conf/configuration.xml</string>
+          <string>WEB-INF/conf/common/locales-config.xml</string>
+          <string>WEB-INF/web.xml</string>
+          <string>META-INF/exo-conf/configuration.xml</string>
+        </pathsSet>
+      </path-set>
+    </entry>
+  </registeredFiles>
+  <dependenciesInfo/>
+</webapp-structure>

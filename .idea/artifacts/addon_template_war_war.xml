@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="addon-template-war:war">
+    <output-path>$PROJECT_DIR$/war/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>addon-template-war</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="addon-template-webapp.war">
+      <element id="artifact" artifact-name="addon-template-war:war exploded" />
+    </root>
+  </artifact>
+</component>

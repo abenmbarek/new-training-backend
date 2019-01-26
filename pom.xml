@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>addons-parent-pom</artifactId>
+		<groupId>org.exoplatform.addons</groupId>
+		<version>6</version>
+	</parent>
+	<groupId>org.exoplatform.samples</groupId>
+	<artifactId>addon-template</artifactId>
+	<version>1.0</version>
+	<packaging>pom</packaging>
+	<name>Addon packaging template parent POM</name>
+	<description>Addon packaging template parent POM</description>
+	<modules>
+		<module>services</module>
+		<module>war</module>
+		<module>packaging</module>
+		<module>portlets</module>
+	</modules>
+	<properties>
+		<maven.compiler.target>1.6</maven.compiler.target>
+		<maven.compiler.source>1.6</maven.compiler.source>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<org.exoplatform.depmgt.version>11-SNAPSHOT</org.exoplatform.depmgt.version>
+		<platform.version>5.1.0</platform.version>
+		<jpa-api.version>1.0.1.Final</jpa-api.version>
+	</properties>
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.exoplatform.platform</groupId>
+				<artifactId>platform</artifactId>
+				<version>${platform.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.exoplatform.samples</groupId>
+				<artifactId>addon-template-services</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.hibernate.javax.persistence</groupId>
+				<artifactId>hibernate-jpa-2.0-api</artifactId>
+				<version>${jpa-api.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.exoplatform.samples</groupId>
+				<artifactId>addon-template-war</artifactId>
+				<version>${project.version}</version>
+				<type>war</type>
+			</dependency>
+			<dependency>
+				<groupId>org.exoplatform.samples</groupId>
+				<artifactId>addon-template-portlets</artifactId>
+				<version>${project.version}</version>
+				<type>war</type>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+</project>
