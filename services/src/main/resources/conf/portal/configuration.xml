@@ -13,11 +13,39 @@
                xmlns="http://www.exoplaform.org/xml/ns/kernel_1_2.xsd">
 
     <component>
+        <type>org.exoplatform.stock.services.rest.ArticleRestService</type>
+    </component>
+
+    <component>
+        <type>org.exoplatform.stock.services.rest.CategoryRestService</type>
+    </component>
+
+    <component>
+        <type>org.exoplatform.stock.services.rest.ClientRestService</type>
+    </component>
+
+    <component>
         <type>org.exoplatform.stock.services.utils.ArticleService</type>
     </component>
 
     <component>
-        <type>org.exoplatform.stock.services.rest.ArticleRestService</type>
+        <type>org.exoplatform.stock.services.utils.CategoryService</type>
+    </component>
+
+    <component>
+        <type>org.exoplatform.stock.services.utils.ClientService</type>
+    </component>
+
+    <component>
+        <type>org.exoplatform.stock.dao.ArticleDao</type>
+    </component>
+
+    <component>
+        <type>org.exoplatform.stock.dao.CategoryDao</type>
+    </component>
+
+    <component>
+        <type>org.exoplatform.stock.dao.ClientDao</type>
     </component>
 
     <external-component-plugins>

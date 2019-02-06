@@ -18,14 +18,14 @@ import org.exoplatform.stock.services.utils.ArticleService;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
-@Path("/articles")
+@Path("articles")
 @Produces(MediaType.APPLICATION_JSON)
 public class ArticleRestService implements ResourceContainer{
 
     private static Log   log = ExoLogger.getLogger(ArticleRestService.class);
 
     @Inject
-    ArticleService articleService;
+    private ArticleService articleService;
 
     @RolesAllowed("users")
     @GET
@@ -36,12 +36,12 @@ public class ArticleRestService implements ResourceContainer{
         try {
             for (Article article : articles) {
               JSONObject jsonObject = new JSONObject();
-              jsonObject.put("id_article",article.getIdArticle());
-              jsonObject.put("designation_article",article.getDesignation());
-              jsonObject.put("code_article",article.getCodeArticle ());
-              jsonObject.put("prix_tva_article",article.getPrixTVA());
-              jsonObject.put("prix_uni_article",article.getPrixUnitaireHT());
-              jsonObject.put("categorie_article",article.getCategory().getIdCategorye());
+              jsonObject.put("id_article", article.getIdArticle());
+              jsonObject.put("designation_article", article.getDesignation());
+              jsonObject.put("code_article", article.getCodeArticle ());
+              jsonObject.put("prix_tva_article", article.getPrixTVA());
+              jsonObject.put("prix_uni_article", article.getPrixUnitaireHT());
+              jsonObject.put("categorie_article", article.getCategory().getIdCategorye());
               jsonArray.add(jsonObject);
             }
         }

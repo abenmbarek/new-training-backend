@@ -29,7 +29,7 @@ public class Article {
   private Long     prixUnitaireTTC;
 
   @ManyToOne
-  @JoinColumn(name = "ID_CATEGORY")
+  @JoinColumn(name = "CATEGORY_ID")
   private Category category;
 
   /**
