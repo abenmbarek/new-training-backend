@@ -11,6 +11,6 @@ import javax.ws.rs.Path;
 public class ClientOrderRestService implements ResourceContainer {
 
     private static Log log= ExoLogger.getLogger(ClientOrderRestService.class);
-
+    private String a="salut";
     private ClientOrderDao clientOrderDao;
 }
