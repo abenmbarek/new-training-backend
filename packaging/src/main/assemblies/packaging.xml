@@ -11,7 +11,7 @@
       <outputDirectory>/</outputDirectory>
       <outputFileNameMapping>${artifact.artifactId}${dashClassifier?}.${artifact.extension}</outputFileNameMapping>
       <includes>
-        <include>org.exoplatform.samples:addon-template-war</include>
+        <include>org.exoplatform.samples:addon-extension</include>
         <include>org.exoplatform.samples:addon-template-portlets</include>
         <include>org.exoplatform.samples:addon-template-services</include>
       </includes>

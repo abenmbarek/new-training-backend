@@ -26,12 +26,12 @@
     <artifactId>addon-template</artifactId>
     <version>1.0</version>
   </parent>
-  <artifactId>addon-template-war</artifactId>
+  <artifactId>addon-extension</artifactId>
   <packaging>war</packaging>
-  <name>Addon Template Webapp</name>
+  <name>Addon Extension</name>
   <dependencies>
   </dependencies>
   <build>
-    <finalName>addon-template-webapp</finalName>
+    <finalName>addon-extension</finalName>
   </build>
 </project>
