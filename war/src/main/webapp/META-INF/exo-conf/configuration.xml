@@ -22,7 +22,7 @@
 							</collection>
 						</field>
 						<field name="target">
-							<string>platform-extension</string>
+							<string>EnterpriseSkin</string>
 						</field>
 					</object>
 				</object-param>
