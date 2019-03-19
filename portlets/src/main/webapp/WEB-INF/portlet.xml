@@ -7,5 +7,18 @@
     xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd
                         http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd">
 
+    <!-- ================================================================ -->
+    <!-- = Addon Customers Portlet = -->
+    <!-- ================================================================== -->
+    <portlet>
+        <portlet-name>AddonCustomersPortlet</portlet-name>
+        <portlet-class>com.addon.portlets.customers.CustomersPortlet</portlet-class>
+        <supports>
+            <mime-type>text/html</mime-type>
+        </supports>
+        <portlet-info>
+            <title>Addon Customers Portlet</title>
+        </portlet-info>
+    </portlet>
 
 </portlet-app>
