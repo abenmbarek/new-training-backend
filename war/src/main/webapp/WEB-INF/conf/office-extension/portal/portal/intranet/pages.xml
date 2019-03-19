@@ -49,6 +49,17 @@
     <access-permissions>*:/platform/users</access-permissions>
         <container id="ClientsFirstContainer" template="system:/groovy/portal/webui/container/UIContainer.gtmpl">
             <access-permissions>*:/platform/users</access-permissions>
+            <portlet-application>
+                <portlet>
+                    <application-ref>addon-template-portlets</application-ref>
+                    <portlet-ref>AddonCustomersPortlet</portlet-ref>
+                </portlet>
+                <title>Customers list</title>
+                <access-permissions>*:/platform/users</access-permissions>
+                <show-info-bar>false</show-info-bar>
+                <show-application-state>false</show-application-state>
+                <show-application-mode>false</show-application-mode>
+            </portlet-application>
         </container>
         <container id="ClientsSecondContainer" template="system:/groovy/portal/webui/container/UIContainer.gtmpl">
             <access-permissions>*:/platform/users</access-permissions>

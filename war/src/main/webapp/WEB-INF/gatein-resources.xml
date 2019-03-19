@@ -24,9 +24,16 @@
                   xmlns="http://www.gatein.org/xml/ns/gatein_resources_1_3">
 
     <portal-skin>
-         <skin-name>Default</skin-name>
-        <skin-module>addon-css</skin-module>
+         <skin-name>Enterprise</skin-name>
+        <skin-module>font-awesome</skin-module>
         <css-path>/skin/font-awesome/css/all.css</css-path>
         <css-priority>1</css-priority>
+    </portal-skin>
+
+    <portal-skin>
+        <skin-name>Enterprise</skin-name>
+        <skin-module>addon-css</skin-module>
+        <css-path>/skin/css/addonSkin.css</css-path>
+        <overwrite>true</overwrite>
     </portal-skin>
 </gatein-resources>
