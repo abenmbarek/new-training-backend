@@ -16,42 +16,19 @@
 	<description>Addon packaging template parent POM</description>
 	<modules>
 		<module>services</module>
-		<module>war</module>
-		<module>packaging</module>
 		<module>portlets</module>
 	</modules>
 	<properties>
 		<maven.compiler.target>1.6</maven.compiler.target>
 		<maven.compiler.source>1.6</maven.compiler.source>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<org.exoplatform.depmgt.version>11-SNAPSHOT</org.exoplatform.depmgt.version>
-		<platform.version>5.1.0</platform.version>
-		<jpa-api.version>1.0.1.Final</jpa-api.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
-				<groupId>org.exoplatform.platform</groupId>
-				<artifactId>platform</artifactId>
-				<version>${platform.version}</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
-			<dependency>
 				<groupId>org.exoplatform.samples</groupId>
 				<artifactId>addon-template-services</artifactId>
 				<version>${project.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.hibernate.javax.persistence</groupId>
-				<artifactId>hibernate-jpa-2.0-api</artifactId>
-				<version>${jpa-api.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.exoplatform.samples</groupId>
-				<artifactId>addon-extension</artifactId>
-				<version>${project.version}</version>
-				<type>war</type>
 			</dependency>
 			<dependency>
 				<groupId>org.exoplatform.samples</groupId>
@@ -59,6 +36,8 @@
 				<version>${project.version}</version>
 				<type>war</type>
 			</dependency>
+			
+			
 		</dependencies>
 	</dependencyManagement>
 </project>

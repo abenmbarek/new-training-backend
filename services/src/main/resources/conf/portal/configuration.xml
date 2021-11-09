@@ -13,42 +13,37 @@
                xmlns="http://www.exoplaform.org/xml/ns/kernel_1_2.xsd">
 
     <component>
-        <type>org.exoplatform.stock.services.rest.ArticleRestService</type>
+        <type>org.exoplatform.services.rest.AddonRestServices</type>
+    </component>
+
+     <component>
+    <key>org.exoplatform.services.utils.AddonServicesInterface</key>
+    <type>org.exoplatform.services.utils.AddonServices</type>
+  </component>
+    <component>
+        <type>org.exoplatform.services.rest.ClientRestService</type>
+    </component>
+    <component>
+        <type>org.exoplatform.dao.ClientDao</type>
+    </component>
+    <component>
+        <key>org.exoplatform.services.utils.ClientServiceInterface</key>
+        <type>org.exoplatform.services.utils.ClientService</type>
     </component>
 
     <component>
-        <type>org.exoplatform.stock.services.rest.CategoryRestService</type>
+        <type>org.exoplatform.dao.ArticleDao</type>
     </component>
 
     <component>
-        <type>org.exoplatform.stock.services.rest.ClientRestService</type>
+        <type>org.exoplatform.services.rest.ArticleRestServices</type>
     </component>
 
     <component>
-        <type>org.exoplatform.stock.services.utils.ArticleService</type>
+        <key>org.exoplatform.services.utils.ArticleServiceInterface</key>
+        <type>org.exoplatform.services.utils.ArticleService</type>
     </component>
-
-    <component>
-        <type>org.exoplatform.stock.services.utils.CategoryService</type>
-    </component>
-
-    <component>
-        <type>org.exoplatform.stock.services.utils.ClientService</type>
-    </component>
-
-    <component>
-        <type>org.exoplatform.stock.dao.ArticleDao</type>
-    </component>
-
-    <component>
-        <type>org.exoplatform.stock.dao.CategoryDao</type>
-    </component>
-
-    <component>
-        <type>org.exoplatform.stock.dao.ClientDao</type>
-    </component>
-
-    <external-component-plugins>
+   <external-component-plugins>
                 <target-component>org.exoplatform.commons.api.persistence.DataInitializer</target-component>
                 <component-plugin>
                         <name>StockChangeLogsPlugin</name>
