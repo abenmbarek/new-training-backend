@@ -43,6 +43,13 @@
         <key>org.exoplatform.services.utils.ArticleServiceInterface</key>
         <type>org.exoplatform.services.utils.ArticleService</type>
     </component>
+
+    <component>
+        <type>org.exoplatform.services.utils.TrainingService</type>
+    </component>
+    <component>
+        <type>org.exoplatform.services.utils.StartableTrainingService</type>
+    </component>
    <external-component-plugins>
                 <target-component>org.exoplatform.commons.api.persistence.DataInitializer</target-component>
                 <component-plugin>

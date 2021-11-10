@@ -67,24 +67,10 @@ public class ArticleRestServices implements ResourceContainer {
     //@RolesAllowed("users")
     public Response getArticles() {
         List<Article> articles = articleServiceInterface.getArticles() ;
-        //List<JSONArray> articlesdto = new ArrayList<JSONArray>();
         JSONArray jsonArray = new JSONArray();
         try {
-
             for (Article a : articles) {
-               // ClientDto clientDto =  ClientMapper.clientToDto(a.getClient());
                 jsonArray.add(ArticleMapper.articleToDto(a).toJSONObject(0));
-
-                /*JSONObject jsonObject = new JSONObject();
-                jsonObject.put("id_article", a.getIdArticle());
-                jsonObject.put("prixUnitaireHT", a.getPrixUnitaireHT());
-                jsonObject.put("codeArticle", a.getCodeArticle());
-                jsonObject.put("designation", a.getDesignation());
-                jsonObject.put("prixTVA", a.getPrixTVA());
-                jsonObject.put("prixUnitaireTTC", a.getPrixUnitaireTTC());
-                jsonObject.put("client", clientDto);
-                jsonArray.add(jsonObject);*/
-
             }
         } catch (Exception e) {
             // TODO: handle exception
